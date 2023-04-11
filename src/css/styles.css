@@ -17,7 +17,6 @@ body {
 
     color: var(--color3);
     font: normal 400 16px "Roboto", sans-serif;
-    height: 100vh;
     background: var(--color2);
 
 }
@@ -107,7 +106,6 @@ dt::after {
     flex-direction: column;
     padding: 24px;
     row-gap: 16px;
-    max-width: 428px;
     max-height: 762px;
     margin: 0 auto;
 }
@@ -157,5 +155,4 @@ dt::after {
 
 .card-container {
     display: flex;
-
 }
