@@ -173,7 +173,6 @@ hr {
     display: flex;
     position: sticky;
     background: var(--color2);
-    cursor: pointer;
     bottom: 0;
     left: 0;
     flex-direction: column;
@@ -184,4 +183,7 @@ hr {
     align-items: center;
     padding-bottom: 6px;
     padding-top: 11px;
+}
+.footer-icons__item {
+    cursor: pointer;
 }
