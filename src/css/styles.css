@@ -23,9 +23,12 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px 10px 10px;
+    row-gap: 16px;
+    flex: 1 1 auto;
     max-width: 768px;
-    margin: 0 auto;
-
 }
 
 .header {
@@ -83,10 +86,9 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding: 24px 12px 0 12px;
-    row-gap: 16px;
+    min-height: 100%;
     margin: 0 auto;
+    max-width: 768px;
 }
 
 .card {
@@ -177,6 +179,7 @@ hr {
 .footer {
     display: flex;
     position: sticky;
+    border-top: 1px solid var(--color1);
     background: var(--color2);
     bottom: 0;
     left: 0;
@@ -188,9 +191,44 @@ hr {
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 6px;
-    padding-top: 11px;
+    padding-top: 20px;
 }
 
 .footer-icons__item {
     cursor: pointer;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.form-item {
+    position: relative;
+    display: flex;
+}
+.form-item__input {
+    padding: 14px 15px;
+    background-color: var(--color2);
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+    width: 100%;
+}
+.form-item__input_select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: url(../img/arrow.svg) no-repeat right 14px top 50%;
+}
+.form-item__label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+.form-item__input:focus + .form-item__label,
+.form-item__input:not(:placeholder-shown) + .form-item__label {
+    transform: translate(1px, -20px) scale(1);
+    transition: 0.3s;
+    font-size: 13px;
+    background-color: var(--color2);
 }
