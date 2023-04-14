@@ -30,6 +30,13 @@ body {
     flex: 1 1 auto;
     max-width: 768px;
 }
+.container_history {
+    row-gap: 0;
+}
+.history-left {
+    display: flex;
+    column-gap: 54px;
+}
 
 .header {
     display: flex;
@@ -232,3 +239,17 @@ hr {
     font-size: 13px;
     background-color: var(--color2);
 }
+.history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color1);
+
+}
+.history__item, .history-left__item{
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px;
+}
+
