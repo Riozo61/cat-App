@@ -253,3 +253,52 @@ hr {
     padding: 12px;
 }
 
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--addColorDark);
+    top: 0;
+    left: 0;
+}
+.popup-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup-content {
+    background-color: var(--color2);
+    border-radius: 12px;
+    width: 768px;
+
+}
+.popup-header {
+    border-bottom: 1px solid var(--color1);
+}
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    border-top: 1px solid var(--color1);
+}
+.button {
+    width: 120px;
+    height: 48px;
+    border: 1px solid;
+    border-color: var(--color1);
+    border-radius: 8px;
+    background: none;
+    margin: 15px;
+}
+.button_create {
+    background: var(--color1);
+}
+.form_popup {
+    padding: 24px 12px;
+}
+.header-container {
+    padding: 16px;
+}
